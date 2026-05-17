@@ -55,7 +55,7 @@ function Index() {
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cocoa/80 via-cocoa/30 to-transparent p-8">
             <p className="font-mono-display mb-2 text-[10px] uppercase tracking-[0.25em] text-white/60">
-              Portrait — swap this with your photo
+              NY / NJ Area
             </p>
             <h2 className="text-2xl font-bold text-white md:text-3xl">{profile.tagline}</h2>
           </div>
@@ -95,15 +95,15 @@ function Index() {
         </BentoCard>
 
         {/* CTA */}
-        <BentoCard className="animate-fade-in [animation-delay:400ms] col-span-1 flex items-center justify-between gap-4 px-8 py-6 md:col-span-12">
-          <p className="font-medium">Want the full story? See what I've been building.</p>
-          <Link
-            to="/experiences"
-            className="font-mono-display inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-background transition-transform hover:scale-[1.02]"
-          >
-            View experiences →
-          </Link>
-        </BentoCard>
+        {/*<BentoCard className="animate-fade-in [animation-delay:400ms] col-span-1 flex items-center justify-between gap-4 px-8 py-6 md:col-span-12">*/}
+        {/*  <p className="font-medium">Want the full story? See what I've been building.</p>*/}
+        {/*  <Link*/}
+        {/*    to="/experiences"*/}
+        {/*    className="font-mono-display inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-background transition-transform hover:scale-[1.02]"*/}
+        {/*  >*/}
+        {/*    View experiences →*/}
+        {/*  </Link>*/}
+        {/*</BentoCard>*/}
       </div>
     </main>
   );

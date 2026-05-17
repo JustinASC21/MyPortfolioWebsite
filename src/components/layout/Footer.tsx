@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="relative z-10 mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-border px-6 py-12 md:flex-row">
       <p className="font-mono-display text-center text-[10px] uppercase tracking-[0.4em] text-foreground/30 md:text-left">
-        © {new Date().getFullYear()} J. Lema Rivera — Engineered for precision
+        © {new Date().getFullYear()} JL.R
       </p>
       <div className="flex gap-8">
         <a

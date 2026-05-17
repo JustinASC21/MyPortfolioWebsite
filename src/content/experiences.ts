@@ -10,6 +10,31 @@ export type Experience = {
   tech: string[];
 };
 
+export type School = {
+  id: string;
+  major: string;
+  university: string;
+  shortName: string;
+  gradDate: string;
+  summary: string;
+  relevantCourses: string[];
+}
+
+export const school: School = {
+  id: "stevens",
+  major: "CS & Finance",
+  university: "Stevens Institute of Technology",
+  shortName: "Stevens Institute of Technology",
+  gradDate: "Sep 2023 — Present",
+  summary:
+  "Pursuing B.S. in Computer Science and minor in Finance at Stevens Institute of Technology.",
+  relevantCourses: [
+  "Algorithms",
+  "Operating System",
+  ],
+}
+
+
 export const experiences: Experience[] = [
   {
     id: "aws",
@@ -47,7 +72,7 @@ export const experiences: Experience[] = [
     role: "Teaching Assistant",
     company: "All Star Code",
     shortName: "All Star Code",
-    period: "Summer 2022",
+    period: "2022 - 2023",
     summary:
       "Worked alongside a team of passionate instructors in a 6-week coding summer intensive for high school students.",
     highlights: [

@@ -3,7 +3,7 @@ import { TechChip } from "./TechChip";
 
 export function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
   return (
-    <article className="group relative rounded-[2rem] border border-border bg-card/60 p-8 backdrop-blur-sm transition-colors hover:bg-card md:p-10">
+    <article className="group w-full md:w-3/4 relative rounded-[2rem] border border-border bg-card/60 p-8 backdrop-blur-sm transition-colors hover:bg-card md:p-10">
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-5">
           <span className="font-mono-display mt-1 text-xs font-bold text-accent">
@@ -20,9 +20,6 @@ export function ExperienceCard({ exp, index }: { exp: Experience; index: number 
               Current
             </span>
           )}
-          <span className="font-mono-display text-[10px] uppercase tracking-widest text-foreground/40">
-            {exp.period}
-          </span>
         </div>
       </div>
 
