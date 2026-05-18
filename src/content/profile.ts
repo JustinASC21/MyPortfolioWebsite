@@ -9,7 +9,7 @@ export const profile = {
     "I'm a full stack engineer drawn to the intersection of backend architecture, cloud services, and UI interfaces. With an interest in financial markets and algorithmic trading, I share a passion for developing modern financial infrastructure.",
   contactBlurb:
     "Connect with me!",
-  email: "justinlema01@gmail.com",
+  email: "justinlema0012@gmail.com",
   socials: {
     linkedin: "https://www.linkedin.com/in/justin-lema-riv024/",
     instagram: "https://www.instagram.com/lejust_justin/",

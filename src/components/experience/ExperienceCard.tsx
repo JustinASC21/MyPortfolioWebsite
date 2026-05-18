@@ -6,9 +6,11 @@ export function ExperienceCard({ exp, index }: { exp: Experience; index: number 
     <article className="group w-full md:w-3/4 relative rounded-[2rem] border border-border bg-card/60 p-8 backdrop-blur-sm transition-colors hover:bg-card md:p-10">
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-5">
-          <span className="font-mono-display mt-1 text-xs font-bold text-accent">
-            {String(index + 1).padStart(2, "0")}
+          
+          <span className="inline-flex items-center justify-center h-16 w-16 shrink-0 rounded-full border border-accent text-accent">
+            <img src={exp.logoSrc} alt={`${exp.shortName} logo`} className="h-10 w-10 shrink-0 rounded object-contain" />
           </span>
+      
           <div>
             <h3 className="text-xl font-bold leading-tight md:text-2xl">{exp.role}</h3>
             <p className="mt-1 text-sm text-foreground/50">{exp.company}</p>
