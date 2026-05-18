@@ -37,14 +37,14 @@ function ContactPage() {
           Get to know me
         </p>
         <h1 className="mb-6 text-balance text-5xl font-extrabold leading-[0.9] tracking-tight md:text-6xl">
-          Say hi — I read <span className="text-accent">everything</span>.
+          Send a <span className="text-accent">message</span>!
         </h1>
         <p className="text-pretty text-lg leading-relaxed text-foreground/70">
           {profile.contactBlurb}
         </p>
       </header>
 
-      <div className="grid gap-6 md:grid-cols-12">
+      <div className="grid gap-6 md:grid-cols-6">
         {/* Email feature */}
         <BentoCard className="animate-fade-in [animation-delay:100ms] col-span-1 flex flex-col justify-between gap-8 border-transparent bg-accent p-10 text-white md:col-span-7 md:p-12">
           <div>
@@ -60,42 +60,16 @@ function ContactPage() {
             </a>
           </div>
           <p className="font-mono-display max-w-md text-sm uppercase tracking-widest opacity-70">
-            Best for longer messages, opportunities, and project ideas.
+            React out with a message, opportunity, or project idea!
           </p>
         </BentoCard>
 
-        {/* Currently */}
-        <BentoCard className="animate-fade-in [animation-delay:200ms] col-span-1 p-8 md:col-span-5 md:p-10">
-          <p className="font-mono-display mb-6 text-xs uppercase tracking-widest text-foreground/40">
-            Currently
-          </p>
-          <ul className="space-y-4">
-            <li>
-              <p className="font-mono-display text-[10px] uppercase tracking-widest text-accent">
-                Building
-              </p>
-              <p className="font-medium">SwiftControl backend services</p>
-            </li>
-            <li>
-              <p className="font-mono-display text-[10px] uppercase tracking-widest text-accent">
-                Reading
-              </p>
-              <p className="font-medium">Designing Data-Intensive Applications</p>
-            </li>
-            <li>
-              <p className="font-mono-display text-[10px] uppercase tracking-widest text-accent">
-                Listening to
-              </p>
-              <p className="font-medium">A lot of Tycho and Bonobo</p>
-            </li>
-          </ul>
-        </BentoCard>
 
         {/* Socials */}
         {socials.map((s, i) => (
           <BentoCard
             key={s.label}
-            className="animate-fade-in col-span-1 md:col-span-4"
+            className="animate-fade-in col-span-1 md:col-span-2"
             style={{ animationDelay: `${300 + i * 100}ms` }}
           >
             <a
@@ -117,22 +91,6 @@ function ContactPage() {
             </a>
           </BentoCard>
         ))}
-
-        {/* Mail fallback tile */}
-        <BentoCard className="animate-fade-in [animation-delay:600ms] col-span-1 md:col-span-12">
-          <a
-            href={`mailto:${profile.email}`}
-            className="group flex items-center justify-between gap-4 px-8 py-6"
-          >
-            <div className="flex items-center gap-4">
-              <Mail className="size-5 text-accent" />
-              <p className="font-medium">Or just send a quick note — no pitch deck required.</p>
-            </div>
-            <span className="font-mono-display text-xs uppercase tracking-widest text-foreground/40 transition-colors group-hover:text-accent">
-              {profile.email} →
-            </span>
-          </a>
-        </BentoCard>
       </div>
     </main>
   );
