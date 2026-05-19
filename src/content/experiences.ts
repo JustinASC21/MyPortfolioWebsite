@@ -1,6 +1,7 @@
 import aws from "@/assets/aws.svg";
 import ASC from "@/assets/all_star_code.jpg";
 import swift from "@/assets/swift.jpg";
+import codeNation from "@/assets/codenation.jpg";
 
 export type Experience = {
   id: string;
@@ -67,7 +68,7 @@ export const experiences: Experience[] = [
     status: "past",
     logoSrc: aws,
     summary:
-      "Developed an automated vulnerability detection application for the AWS Elastic Beanstalk team, to proactively identify security vulnerabilities and improve customer trust",
+      "Developed an automated vulnerability detection application for the AWS Elastic Beanstalk team, to proactively identify security vulnerabilities and improve customer trust.",
     highlights: [
       "Engineered a PoC internal console in Python, which streamlined the triage of high-priority platforms issues from CVEs.",
       "Pitched, built, and deployed a React-based UI with AWS Amplify to manage error automation and sustain informational logs.",
@@ -98,13 +99,27 @@ export const experiences: Experience[] = [
     period: "Jun 2023 - Aug 2023",
     logoSrc: ASC,
     summary:
-      "Mentored 60+ students in full-stack development, guiding implmentation of technical concepts during a 6-week intensive",
+      "Mentored 60+ students in full-stack development, guiding implmentation of technical concepts during a 6-week intensive.",
     highlights: [
       "Mentored students through their first full-stack web projects, from idea to live demo day.",
       "Optimized curriculum and lesson plans in collaboration with Lead Instructors, facilitating code-along lectures and office hours.",
       "Led targeted JavaScript and HTML lectures, with additional instructive help during office hours."
     ],
     tech: ["JavaScript", "HTML", "CSS", "Git"],
+  },
+  {
+    id: "codenation",
+    role: "Student Fellow",
+    company: "Code Nation",
+    shortName: "Code Nation",
+    period: "Sep 2022 - Jun 2023",
+    logoSrc: codeNation,
+    summary:
+      "Attended an advanced web development class sponsored by Code Nation, hosted at Google's office in NY. Worked alongside Google engineers to ship a demo day project with teammates.",
+    highlights: [
+      "Use technologies like JQuery, React to develop an online monopoly game.",
+    ],
+    tech: ["JavaScript", "Typescript", "React", "JQuery"],
   },
   {
     id: "allstarcode",

@@ -36,9 +36,10 @@ function Index() {
           <h1 className="mb-8 text-balance text-6xl font-extrabold leading-[0.85] tracking-tight md:text-8xl">
             {profile.firstNames} <br/> <span className="text-accent">{profile.surname}</span>
           </h1>
-          <p className="text-pretty text-xl font-medium leading-relaxed text-foreground/70 md:text-2xl">
+          {/* <p className="text-pretty text-xl font-medium leading-relaxed text-foreground/70 md:text-2xl">
             {profile.shortBio}
-          </p>
+          </p> */}
+          {/* Omit until new shortBio */}
         </div>
       </section>
 
@@ -60,12 +61,20 @@ function Index() {
             <h2 className="text-2xl font-bold text-white md:text-3xl">{profile.tagline}</h2>
           </div>
         </BentoCard>
+        
+        {/* Bio */}
+        <BentoCard className="animate-fade-in [animation-delay:300ms] col-span-1 p-8 md:col-span-5 md:p-10">
+          <p className="font-mono-display mb-4 text-xs uppercase tracking-widest text-foreground/40">
+            About Me
+          </p>
+          <p className="text-pretty leading-relaxed text-foreground/80">{profile.longBio}</p>
+        </BentoCard>
 
         {/* Current focus */}
         <BentoCard className="animate-fade-in [animation-delay:200ms] relative col-span-1 flex flex-col justify-between overflow-hidden border-transparent bg-accent p-10 text-white md:col-span-5">
           <div className="relative z-10">
             <p className="font-mono-display mb-4 text-xs font-medium uppercase tracking-[0.2em] opacity-70">
-              Currently
+              Incoming
             </p>
             <h3 className="text-3xl font-extrabold leading-[0.95] tracking-tight md:text-4xl">
               {current.role.toUpperCase()}
@@ -73,26 +82,10 @@ function Index() {
               <span className="opacity-80">@ {current.shortName}</span>
             </h3>
           </div>
-          <div className="relative z-10 mt-10 flex flex-wrap gap-2">
-            {current.tech.slice(0, 4).map((t) => (
-              <span
-                key={t}
-                className="font-mono-display rounded-lg border border-white/10 bg-white/10 px-3 py-1.5 text-[11px] font-bold backdrop-blur-md"
-              >
-                {t.toUpperCase()}
-              </span>
-            ))}
-          </div>
+          <p className="text-pretty font-extrabold leading-relaxed">Jun 2026</p>
           <div className="absolute -bottom-8 -right-8 size-48 rounded-full bg-white/10 blur-3xl" />
         </BentoCard>
 
-        {/* Bio */}
-        <BentoCard className="animate-fade-in [animation-delay:300ms] col-span-1 p-8 md:col-span-5 md:p-10">
-          <p className="font-mono-display mb-4 text-xs uppercase tracking-widest text-foreground/40">
-            About
-          </p>
-          <p className="text-pretty leading-relaxed text-foreground/80">{profile.longBio}</p>
-        </BentoCard>
 
         {/* CTA */}
         {/*<BentoCard className="animate-fade-in [animation-delay:400ms] col-span-1 flex items-center justify-between gap-4 px-8 py-6 md:col-span-12">*/}
@@ -103,7 +96,7 @@ function Index() {
         {/*  >*/}
         {/*    View experiences →*/}
         {/*  </Link>*/}
-        {/*</BentoCard>*/}
+        {/*</BentoCard> */}
       </div>
     </main>
   );

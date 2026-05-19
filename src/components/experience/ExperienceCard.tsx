@@ -8,7 +8,7 @@ export function ExperienceCard({ exp, index }: { exp: Experience; index: number 
         <div className="flex items-start gap-5">
           
           <span className="inline-flex items-center justify-center h-16 w-16 shrink-0 rounded-full border border-accent text-accent">
-            <img src={exp.logoSrc} alt={`${exp.shortName} logo`} className="h-10 w-10 shrink-0 rounded object-contain" />
+            <img src={exp.logoSrc} alt={`${exp.shortName} logo`} className="h-14 w-14 shrink-0 rounded-full object-contain" />
           </span>
       
           <div>
